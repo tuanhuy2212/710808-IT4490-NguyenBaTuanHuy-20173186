@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Users/bahuy/Pictures/Saved%20Pictures/images.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" prefHeight="50.0" prefWidth="200.0" text="SHIPPING" textFill="#0b5eda">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="124.0" layoutY="96.0" prefHeight="400.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="0.0" prefWidth="207.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="504.0" minWidth="0.0" prefWidth="493.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="259.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="252.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="34.0" prefWidth="130.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="90.0" prefWidth="130.0" text="Phone" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="90.0" prefWidth="140.0" text="Province/City" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="90.0" prefWidth="200.0" text="Address" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="90.0" prefWidth="200.0" text="Shipping Instructions" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="40.0" prefWidth="504.0" GridPane.columnIndex="1" />
+            <TextField prefHeight="40.0" prefWidth="504.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField prefHeight="69.0" prefWidth="504.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField prefHeight="101.0" prefWidth="504.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox prefHeight="40.0" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="407.0" layoutY="570.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="186.0" text="Confirm Delivery">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
